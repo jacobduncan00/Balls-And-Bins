@@ -1,5 +1,10 @@
 # Balls & Bins Goals
 
+Still looking to add probability and counting aspects to it, but this is just a general visualization
+Should be able to open the html file in a web browser and it should work out of the box, if not... then I'll
+have to do a little bit of tweaking and see if I can figure out exactly how I installed matter-js and p5-js to make
+this work
+
 - [x] Create Canvas
 - [x] Create Pegs
 - [x] Create Balls
