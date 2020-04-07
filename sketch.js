@@ -92,24 +92,28 @@ function testDrop() {
   balls.push(ball);
 }
 
+function numOfBalls() {
+  let num = prompt("How many balls would you like to drop?");
+  return num;
+}
+
+let num = numOfBalls();
+let counter = 0;
+
 function draw() {
   background(0, 0, 0);
-  if (frameCount % 60 == 0) {
+  if (frameCount % 60 == 0 && counter < num) {
     // You can choose what side you want the balls to drop from
     // 1. newBall() = middle
     // 2. newBall2() = left
     // 3. newBall3() = right
     // 4. randBall() = random
     randBall();
+    counter++;
   }
 
   // Matter-js updating engine to re-render physics
   Engine.update(engine, 1000 / 30);
-
-  for (var i = 0; i < balls.length; i++) {
-    // Show each ball spawned
-    balls[i].show();
-  }
 
   // Print all pegs
   for (var i = 0; i < pegs.length; i++) {
@@ -119,5 +123,10 @@ function draw() {
   // Print all bins
   for (var i = 0; i < bins.length; i++) {
     bins[i].show();
+  }
+
+  // Show each ball spawned
+  for (var i = 0; i < balls.length; i++) {
+    balls[i].show();
   }
 }

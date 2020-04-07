@@ -5,6 +5,7 @@
 - [x] Create Balls
 - [x] Spawn Balls from top
 - [x] Add physics with matter-js
+- [ ] Add boundaries to the world
 - [ ] Count balls
 - [ ] Create bin object where balls can be counted
 - [ ] Count balls in bins
