@@ -1,4 +1,4 @@
-# Balls & Bins 
+# Balls & Bins ⚽🗑️
 
 ### The Premise
 There are m balls and n bins. Each ball is independently "thrown" into a bin that is chosen uniformly at
